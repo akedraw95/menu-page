@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Mexican Restaurant Menu&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Rye&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body, html {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #000;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-image: url('https://static.wixstatic.com/media/7271e9_8e3dc25d35c0434081eb340bd48c21cc~mv2.jpeg');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 90vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-attachment: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-position: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>font-size: 8em;</p>
+<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span> </span>background-color: rgba(0, 0, 0, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>font-family: 'Raleway', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #D4AF37;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tabs {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 2px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Rye', cursive;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #D4AF37;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tab.active::after {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #FFF9E1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.menu-section {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.menu-section.active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.parallax {</p>
+<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span> </span>background-attachment: fixed;</p>
+<p class="p1"><span class="Apple-tab-span">	</span> background-position: center;</p>
+<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span> </span>background-repeat: no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">  <span class="Apple-tab-span">	</span> </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span> </span>min-height: 400px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.category h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Rye', cursive;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #32B7A3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.menu-item {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.menu-item h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.4em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.menu-item p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 5px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #aaa;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media screen and (max-width: 600px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.tabs {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;MENU&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="tabs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tab active" data-tab="brunch"&gt;Brunch&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tab" data-tab="lunch"&gt;Lunch Specials&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tab" data-tab="food"&gt;Food&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tab" data-tab="cocktails"&gt;Cocktails&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="brunch" class="menu-section active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Brunch Favorites&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Chilaquiles Verdes &lt;span&gt;$10.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Tortilla chips smothered in green salsa, topped with crema, queso fresco, and a fried egg.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Huevos Rancheros &lt;span&gt;$12.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Fried eggs on corn tortillas with ranchero sauce, refried beans, and avocado.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Breakfast Burrito &lt;span&gt;$9.50&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Flour tortilla filled with eggs, chorizo, potatoes, cheese, and salsa.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="lunch" class="menu-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Lunch Specials&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Taco Plate (3) &lt;span&gt;$11.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Choice of carnitas, carne asada, or chicken tacos served with rice and beans.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Enchiladas Verdes &lt;span&gt;$13.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Three corn tortillas rolled with chicken, topped with green tomatillo sauce and cheese.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1">&lt;!-- Parallax Section - Queso Image --&gt;</p>
+<p class="p1">&lt;div class="parallax" style="background-image: url('https://static.wixstatic.com/media/7271e9_e3757e3563f841c9adc4ce068c2b9d51~mv2.jpeg');"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Quesadilla with Guacamole &lt;span&gt;$10.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Grilled flour tortilla filled with cheese and your choice of meat or veggies.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="food" class="menu-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Pollo&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Pollo Fundido &lt;span&gt;$12.99&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Shredded chicken wrapped in a tortilla, fried, and topped with creamy jalapeño cheese sauce.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Pollo Chipotle &lt;span&gt;$11.99&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Grilled chicken breast in smoky chipotle cream sauce with rice and beans.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Pollo A La Parrilla &lt;span&gt;$13.49&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Marinated grilled chicken breast served with sautéed vegetables and rice.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Chicken Flautas &lt;span&gt;$10.99&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Crispy rolled tortillas filled with chicken and topped with sour cream and guacamole.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Pollo Empanizado &lt;span&gt;$12.49&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Breaded fried chicken breast served with rice, beans, and fresh salad.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Arroz con Pollo &lt;span&gt;$11.49&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Grilled chicken served on a bed of seasoned rice, topped with melted cheese and vegetables.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Fajitas&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Chicken Fajitas &lt;span&gt;$13.99&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Grilled chicken strips with sautéed peppers and onions. Served with rice and tortillas.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Shrimp Fajitas &lt;span&gt;$15.99&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Sizzling shrimp with bell peppers and onions. Served with beans, rice, and tortillas.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Steak Fajitas &lt;span&gt;$14.99&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Tender steak strips grilled with onions and peppers. Served with sides and warm tortillas.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Chicken and Shrimp Combo Fajitas &lt;span&gt;$16.49&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;A delicious combination of grilled chicken and shrimp with peppers and onions.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Steak&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Carne Asada &lt;span&gt;$14.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Grilled steak served with rice, beans, and guacamole.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Parallax Section - Birria Image --&gt;</p>
+<p class="p1">&lt;div class="parallax" style="background-image: url('https://static.wixstatic.com/media/7271e9_491c9f83cb1c4d24b6f47551e4626ab4~mv2.jpeg');"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Birria&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Birria Plate &lt;span&gt;$13.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Slow-cooked beef served with tortillas and rich consommé.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Birria Tacos &lt;span&gt;$12.49&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Crispy tacos filled with juicy birria beef, melted cheese, and served with dipping consommé.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Birria Quesadillas &lt;span&gt;$11.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Griddled quesadilla stuffed with birria beef and melted cheese, served with consommé.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Birria Nachos &lt;span&gt;$10.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Corn chips loaded with birria beef, cheese, jalapeños, and drizzled with crema.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Parallax Section - Queso Image --&gt;</p>
+<p class="p1">&lt;div class="parallax" style="background-image: url('https://static.wixstatic.com/media/7271e9_7f7dd049785f4eccb34f6b81ef81ef73~mv2.jpeg');"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Dips&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Chips and Salsa &lt;span&gt;$3.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Queso &lt;span&gt;$4.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Guacamole &lt;span&gt;$6.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Sides&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Rice and Beans &lt;span&gt;$4.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Guacamole &lt;span&gt;$2.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Sour Cream &lt;span&gt;$1.49&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Pico De Gallo &lt;span&gt;$1.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Avocado Slices &lt;span&gt;$2.49&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Shredded Cheese &lt;span&gt;$1.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Lettuce &lt;span&gt;$0.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Tomatoes &lt;span&gt;$0.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Tortillas &lt;span&gt;$1.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Refried Beans &lt;span&gt;$2.99&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Seafood&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Camarones A la Diabla &lt;span&gt;$14.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Spicy shrimp sautéed in a fiery red chili sauce, served with rice and salad.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Camarones a la Plancha &lt;span&gt;$14.49&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Grilled shrimp seasoned with garlic and spices, served with rice and veggies.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Cocktail de Camaron &lt;span&gt;$13.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Traditional shrimp cocktail in a tangy tomato sauce with avocado, onions, and cilantro.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Shrimp Quesadillas &lt;span&gt;$12.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Flour tortillas filled with cheese and seasoned shrimp, served with sour cream and guac.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Camarones al Ajo &lt;span&gt;$14.99&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Shrimp sautéed in garlic butter sauce served with rice and a side salad.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section id="cocktails" class="menu-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Beverages&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Horchata &lt;span&gt;$3.50&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Agua de Jamaica &lt;span&gt;$3.50&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Mexican Coke &lt;span&gt;$3.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Jarritos (Various Flavors) &lt;span&gt;$2.75&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Tequila&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Patrón Silver &lt;span&gt;$8.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Don Julio Añejo &lt;span&gt;$11.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Clase Azul Reposado &lt;span&gt;$18.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Margaritas&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;House Margarita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Classic blend of tequila, lime juice, and triple sec with a salted rim.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="sub-price"&gt;Glass $9.00 | Pitcher $25.00 | Tower $40.00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Strawberry Margarita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Fresh strawberry purée blended with tequila and lime for a fruity twist.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="sub-price"&gt;Glass $10.00 | Pitcher $27.00 | Tower $42.00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Mango Margarita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Sweet mango purée and premium tequila served on the rocks or frozen.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="sub-price"&gt;Glass $10.00 | Pitcher $27.00 | Tower $42.00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Passionfruit Margarita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Tropical passionfruit blended with lime juice and tequila.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="sub-price"&gt;Glass $10.00 | Pitcher $28.00 | Tower $44.00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Spicy Jalapeño Margarita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;House margarita kicked up with muddled jalapeños and tajín rim.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="sub-price"&gt;Glass $11.00 | Pitcher $30.00 | Tower $46.00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Coconut Margarita&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Creamy coconut and blanco tequila served chilled with toasted coconut rim.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="sub-price"&gt;Glass $11.00 | Pitcher $30.00 | Tower $46.00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">   </span>&lt;!-- Parallax Section - Mojito Image --&gt;</p>
+<p class="p1">&lt;div class="parallax" style="background-image: url('https://static.wixstatic.com/media/7271e9_68661c0dc8d84077b107abbf88657a44~mv2.jpeg');"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Specialty Cocktails&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Paloma Picante &lt;span&gt;$10.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Spicy tequila, grapefruit soda, lime juice, and a chili rim.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Mezcalita de Piña &lt;span&gt;$11.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Smoky mezcal with pineapple juice, lime, and tajín rim.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Oaxacan Old Fashioned &lt;span&gt;$12.00&lt;/span&gt;&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Mezcal and tequila blend, agave syrup, and orange bitters.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Beer&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Modelo Especial &lt;span&gt;$5.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Pacifico &lt;span&gt;$5.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Negra Modelo &lt;span&gt;$5.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Corona &lt;span&gt;$5.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="category"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Wine&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;House Red &lt;span&gt;$6.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;House White &lt;span&gt;$6.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="menu-item"&gt;&lt;h3&gt;Sangria Roja &lt;span&gt;$7.00&lt;/span&gt;&lt;/h3&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const tabs = document.querySelectorAll('.tab');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const sections = document.querySelectorAll('.menu-section');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>tabs.forEach(tab =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tab.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Remove active from all tabs</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tabs.forEach(t =&gt; t.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Add active to clicked tab</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tab.classList.add('active');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Hide all sections</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sections.forEach(section =&gt; section.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Show the clicked section</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById(tab.getAttribute('data-tab')).classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+</body>
+</html>
